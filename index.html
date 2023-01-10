@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./oppgave.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Oppgave - 9 januar</title>
+  </head>
+  <body>
+    <h1>3n + 1</h1>
+    <a href="">Collatz' conjecture</a>
+    <p>
+      Input any positive integer. If the <span class="bold odd">number is odd</span>, it is
+      <span class="bold odd">multiplied by 3</span> and then
+      <span class="bold odd">1 is added</span>. If the
+      <span class="bold even">number is even</span>, it is
+      <span class="bold even">divided by 2</span>. <br />
+      The process <span class="bold">repeats</span> until the number either reaches the
+      <span class="bold">4-2-1-4-loop</span>, or it reaches a
+      <span class="bold">different loop</span>, or it approaches
+      <span class="bold">infinity</span>.
+    </p>
+    <hr />
+    <div class="main">
+      <div class="container top">
+        <h3 class="h3txt item">Input a number:</h3>
+        <input type="number" id="num" class="input item" placeholder="0" />
+        <button class="btn item" id="btn" onclick="runCalc()">Run program</button>
+      </div>
+      <div class="container middle">
+        <div class="numsTxt item">
+          <h3 class="midH3">Input number:</h3>
+          <div id="inputNum" class="mid-txt"></div>
+        </div>
+        <div class="numsTxt item">
+          <h3 class="midH3">Total calculations:</h3>
+          <div id="totNums" class="mid-txt"></div>
+        </div>
+        <div class="numsTxt item">
+          <h3 class="midH3">Highest number:</h3>
+          <div id="topNum" class="mid-txt"></div>
+        </div>
+      </div>
+      <div id="bottom" class="container bottom"></div>
+    </div>
+  </body>
+</html>
